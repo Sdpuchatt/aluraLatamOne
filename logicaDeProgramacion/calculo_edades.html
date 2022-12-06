@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+    function presentacion (edad,nombre){
+        imprimir("Soy "+ nombre + " y tengo " + edad + " años");
+    }
+    function diferenciaEdad(edad1,edad2){
+        let resultado = 0;
+        if(edad1>edad2){
+                resultado = edad1 - edad2;
+        }else {
+            resultado = edad2 - edad1;
+        }
+        imprimir("la diferencia de edad es: "+resultado);
+    }
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    presentacion (33,"Sergio");
+    presentacion(40, "Karina");
+    diferenciaEdad(33,40);
+</script>
